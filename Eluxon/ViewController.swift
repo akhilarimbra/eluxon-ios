@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var onOffLabel: UILabel!
+    @IBOutlet weak var toggleButton: UIButton!
+    
+    var switchStatus: SwitchStatus = .off
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func toggleButtonWasPressed(_ sender: Any) {
+        if switchStatus == .on {
+            view.backgroundColor = UIColor.black
+            toggleButton.setImage(UIImage(named: "onBtn"), for: .normal)
+            onOffLabel.textColor = UIColor.white
+            onOffLabel.text = "🌚 OFF 🌚"
+        } else {
+            view.backgroundColor = UIColor.white
+            toggleButton.setImage(UIImage(named: "offBtn"), for: .normal)
+            onOffLabel.textColor = UIColor.black
+            onOffLabel.text = "☀️ ON ☀️"
+        }
+        switchStatus.toggle()
     }
-
-
 }
 

@@ -14,6 +14,8 @@
 		8503B03C2104B09A0004C84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8503B03A2104B09A0004C84A /* LaunchScreen.storyboard */; };
 		8503B0472104B09A0004C84A /* EluxonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503B0462104B09A0004C84A /* EluxonTests.swift */; };
 		8503B0522104B09A0004C84A /* EluxonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503B0512104B09A0004C84A /* EluxonUITests.swift */; };
+		8573AF202105607D00D9A5CA /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573AF1F2105607D00D9A5CA /* SwitchStatus.swift */; };
+		8573AF22210560BC00D9A5CA /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573AF21210560BC00D9A5CA /* Togglable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8503B04D2104B09A0004C84A /* EluxonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EluxonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8503B0512104B09A0004C84A /* EluxonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EluxonUITests.swift; sourceTree = "<group>"; };
 		8503B0532104B09A0004C84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8573AF1F2105607D00D9A5CA /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		8573AF21210560BC00D9A5CA /* Togglable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		8503B0302104B0990004C84A /* Eluxon */ = {
 			isa = PBXGroup;
 			children = (
+				8573AF1D2105603E00D9A5CA /* Enums */,
+				8573AF1E2105604900D9A5CA /* Protocols */,
 				8503B0312104B0990004C84A /* AppDelegate.swift */,
 				8503B0332104B0990004C84A /* ViewController.swift */,
 				8503B0352104B0990004C84A /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				8503B0532104B09A0004C84A /* Info.plist */,
 			);
 			path = EluxonUITests;
+			sourceTree = "<group>";
+		};
+		8573AF1D2105603E00D9A5CA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8573AF1F2105607D00D9A5CA /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8573AF1E2105604900D9A5CA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8573AF21210560BC00D9A5CA /* Togglable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 			files = (
 				8503B0342104B0990004C84A /* ViewController.swift in Sources */,
 				8503B0322104B0990004C84A /* AppDelegate.swift in Sources */,
+				8573AF202105607D00D9A5CA /* SwitchStatus.swift in Sources */,
+				8573AF22210560BC00D9A5CA /* Togglable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
