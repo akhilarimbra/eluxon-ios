@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             view.backgroundColor = UIColor.white
             toggleButton.setImage(UIImage(named: "offBtn"), for: .normal)
             onOffLabel.textColor = UIColor.black
-            onOffLabel.text = "☀️ ON ☀️"
+            onOffLabel.text = "🌞 ON 🌞"
         }
         switchStatus.toggle()
     }
